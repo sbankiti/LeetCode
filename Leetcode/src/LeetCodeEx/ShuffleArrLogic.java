@@ -1,6 +1,6 @@
 package LeetCodeEx;
 
-public class longSubStr {
+public class ShuffleArrLogic {
 
     public void shufflearray(){
 
