@@ -56,6 +56,7 @@ public class Anagram {
 
     }
 
+    //Problem 347
     public void KthmostFreq(){
 
         int[] nums = new int[] {1,1,1,1,2,2,2,2,3,3};
