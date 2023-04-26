@@ -1,3 +1,6 @@
+import DesignPatterns.Creational.BookingTickets;
+import DesignPatterns.Creational.Factory;
+import DesignPatterns.DesignptrnBuild;
 import Java8Chk.Developer;
 import Java8Chk.Employee;
 import Java8Chk.Java8Features;
@@ -30,8 +33,14 @@ public class Main {
         LeetCodeCalls ltcode = new LeetCodeCalls();
         ltcode.leetCodeMethExec();
 
+        //Design Pattern
+        DesignptrnBuild dsgptrn = new DesignptrnBuild();
+        dsgptrn.build();
+
         //TempClass execution
 /*        TempCls tmpcls = new TempCls();
         tmpcls.tempMethodexec();*/
+
+
     }
 }
