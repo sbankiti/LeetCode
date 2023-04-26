@@ -1,20 +1,4 @@
-import Java8Chk.Developer;
-import Java8Chk.Employee;
-import Java8Chk.Java8Features;
-import LeetCodeEx.LongestConSeq;
-import LeetCodeEx.ProductArraySelf;
-import MultiThreadingEx.MultiThreadingCls;
-import MultiThreadingEx.ThreadImpleRunnable;
-import jdk.jfr.Percentage;
-
-import java.security.PrivilegedAction;
-import java.sql.SQLOutput;
-import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import DesignPatterns.DesignptrnBuild;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException, CloneNotSupportedException {
@@ -30,8 +14,18 @@ public class Main {
         LeetCodeCalls ltcode = new LeetCodeCalls();
         ltcode.leetCodeMethExec();
 
+        //Design Pattern
+        DesignptrnBuild dsgptrn = new DesignptrnBuild();
+        dsgptrn.build();
+
         //TempClass execution
-/*        TempCls tmpcls = new TempCls();
-        tmpcls.tempMethodexec();*/
+        TempCls tmpcls = new TempCls();
+        tmpcls.tempMethodexec();
+
+        TempCls.innerclass inncls = tmpcls.new innerclass();
+        inncls.printmsg();
+
+        System.out.println("Parent Class " + tmpcls);
+
     }
 }
