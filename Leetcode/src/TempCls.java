@@ -1,5 +1,5 @@
 import LeetCodeEx.Anagram;
-import MultiThreadingEx.ParentClass;
+import MultiThreadingEx.subpakage.ParentClass;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -7,10 +7,16 @@ import java.util.stream.Stream;
 public class TempCls extends ParentClass {
 
     int a = 20;
+
+    class innerclass{
+
+        public void printmsg(){
+            System.out.println("Hello world");
+        }
+
+    }
     public void tempMethodexec(){
 
-
-        System.out.println("Parent Class " + a);
         Anagram ang = (Anagram) new Anagram();
         ang.chkAnagram();
 
